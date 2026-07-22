@@ -1,0 +1,35 @@
+.container {
+    width: 600px;
+    height: 450px;
+    background-color: lightpink;
+    margin: 0 auto;
+    display: flex;
+}
+
+.item {
+    height: 150px;
+    width: 150px;
+    /*flex-basis: 170px;*/
+    max-width: 160px; /*перекрывает flex-basis так как это максимум*/
+    font-size: 3em;
+    text-align: center;
+    flex-shrink: 0; /*если объекты больше, то они выходят за рамки при значении 0*/
+    /*flex-grow: 1;   !*растягивает объекты до краев даже если они меньше при значении 1*!*/
+
+}
+
+.red {
+    background-color: red;
+    /*flex-grow: 1;*/
+}
+
+.green {
+    background-color: green;
+    /*flex-grow: 2;*/
+    flex-basis: 200px;  /*приоритет вместо width*/
+}
+
+.blue {
+    background-color: blue;
+    /*flex-grow: 3;*/
+}
